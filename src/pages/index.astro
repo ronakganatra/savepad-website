@@ -2,19 +2,8 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import HomeHero from '../components/HomeHero.astro';
 import HomeFeature from '../components/HomeFeature.astro';
-import Breakpoint from '../components/Breakpoint.astro';
 ---
 <MainLayout>
   <HomeHero />
   <HomeFeature />
-  <Breakpoint 
-    title="Time to bring some structure to your chaos."
-    paragraphs={[
-      "Struggling with collaborating on references for landing pages, ads, product launches, projects, and heaven knows what else?",
-      "Then this one's for you 👊"
-    ]}
-    showButton={false}
-    buttonLabel="Get Started"
-    buttonUrl="/get-started"
-  />
 </MainLayout>
