@@ -1,0 +1,9 @@
+---
+export let href;
+export let className = '';
+---
+<a href={href} class={`bg-purple-800 text-white px-10 py-3 rounded inline-flex items-center space-x-2 hover:bg-purple-700 ${className}`}>
+  <slot name="iconLeft"></slot>
+  <span><slot></slot></span>
+  <slot name="iconRight"></slot>
+</a>

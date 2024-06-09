@@ -1,0 +1,22 @@
+---
+export let altText = 'Savepad UI';
+const cloudinaryBaseUrl = 'https://res.cloudinary.com/savepad-web/image/upload';
+const imagePath = 'v1715850636/Landing%20Pages/Homepage/Savepad_Hero_tnbqfd.png';
+const transformedImageUrl = `${cloudinaryBaseUrl}/f_webp,q_90/${imagePath}`;
+---
+
+<section class="home-feature pb-10 relative">
+  <div class="relative w-full">
+    <div class="absolute inset-x-0 top-0 mx-auto w-[90%] max-w-[700px] h-6 bg-gradient-to-b from-violet-600 to-transparent rounded-full opacity-75 z-0"></div>
+    <img src={transformedImageUrl} alt={altText} class="w-full h-auto relative z-10" />
+    <div class="absolute inset-x-0 bottom-0 mx-auto w-[90%] max-w-[700px] h-6 bg-gradient-to-t from-violet-600 to-transparent rounded-full opacity-75 z-0"></div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .home-feature {
+      display: none;
+    }
+  }
+</style>
