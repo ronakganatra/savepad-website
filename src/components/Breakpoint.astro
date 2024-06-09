@@ -1,0 +1,19 @@
+---
+import PrimaryButton from './PrimaryButton.astro';
+
+export let title = '';
+export let paragraphs = [];
+export let showButton = false;
+export let buttonLabel = '';
+export let buttonUrl = '';
+---
+
+<section class="mx-auto my-8 p-4 max-w-[325px] min-h-[30vh]">
+  <h2 class="text-2xl font-bold mb-4">{title}</h2>
+  {paragraphs.map(paragraph => (
+    <p class="mb-4">{paragraph}</p>
+  ))}
+  {showButton && (
+    <PrimaryButton href={buttonUrl} label={buttonLabel} />
+  )}
+</section>

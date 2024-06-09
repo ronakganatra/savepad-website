@@ -1,13 +1,32 @@
 ---
 import PrimaryButton from './PrimaryButton.astro';
 import SecondaryButton from './SecondaryButton.astro';
+
+export let primaryButtonLabel = 'Sign Up';
+export let primaryButtonHref = '/join';
+export let primaryButtonIconRight = 'heroicons-outline:chevron-right';
+
+export let secondaryButtonLabel = 'View Demo';
+export let secondaryButtonHref = '/learn-more';
+export let secondaryButtonIconRight = 'heroicons-outline:play';
 ---
-<section class="flex flex-col justify-center items-center text-center h-[90vh] bg-gray-800 text-white">
-  <p class="text-yellow-400 font-medium mb-2">✨ Early Access</p>
-  <h1 class="font-outfit text-6xl font-bold mb-4">Helping growth teams get their sh*t together.</h1>
-  <p class="text-xl mb-8">Savepad is the collaborative swipe file to store, organize, reference, share, and actually use all the resources and examples you have.</p>
-  <div class="flex space-x-4">
-    <PrimaryButton href="/join" label="Join waitlist" iconRight="heroicons-outline:chevron-right" />
-    <SecondaryButton href="/learn-more" label="Learn more" iconRight="heroicons-outline:play" />
+
+<section>
+  <div class="hero-container flex flex-col justify-center items-center text-center h-[90vh]">
+    <p class="text-gray-300 font-medium text-xs mb-4">✨ Join 250+ others on our private Beta!</p>
+    <h1 class="font-outfit text-6xl font-medium mb-6">Helping growth teams get their sh*t together.</h1>
+    <p class="mb-8 text-lg">Savepad is the collaborative swipe file to store, organize, reference, share, and actually use all the resources and examples you have.</p>
+    <div class="flex space-x-4 pb-2">
+      <PrimaryButton href="/join">
+        <span slot="iconRight" class="iconify" data-icon="heroicons-outline:chevron-right" data-inline="false"></span>
+        Sign Up
+      </PrimaryButton>
+    </div>
+    <div class="flex space-x-4 pb-2">
+      <SecondaryButton href="/learn-more">
+        <span slot="iconRight" class="iconify" data-icon="heroicons-outline:play" data-inline="false"></span>
+        View Demo
+      </SecondaryButton>
+    </div>
   </div>
 </section>

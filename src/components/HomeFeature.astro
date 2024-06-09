@@ -1,0 +1,39 @@
+---
+export let altText = 'Savepad UI';
+const cloudinaryBaseUrl = 'https://res.cloudinary.com/savepad-web/image/upload';
+const imagePath = 'v1715850636/Landing%20Pages/Homepage/Savepad_Hero_tnbqfd.png';
+const transformedImageUrl = `${cloudinaryBaseUrl}/f_webp,q_90/${imagePath}`;
+---
+
+<section class="home-feature pb-10 relative">
+  <div class="glow-container relative w-full">
+    <img src={transformedImageUrl} alt={altText} class="w-full h-auto relative z-10" />
+    <div class="glow before:absolute before:top-0 before:left-1/2 before:w-[90%] before:max-w-[700px] before:h-6 before:bg-gradient-to-b before:from-violet-600 before:to-transparent before:rounded-full before:opacity-75"></div>
+    <div class="glow after:absolute after:bottom-0 after:left-1/2 after:w-[90%] after:max-w-[700px] after:h-6 after:bg-gradient-to-t after:from-violet-600 after:to-transparent after:rounded-full after:opacity-75"></div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .home-feature {
+      display: none;
+    }
+  }
+  .glow-container::before,
+  .glow-container::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 700px;
+    height: 6px;
+    background: radial-gradient(circle, rgba(139,92,246,0.75), transparent);
+  }
+  .glow-container::before {
+    top: 0;
+  }
+  .glow-container::after {
+    bottom: 0;
+  }
+</style>

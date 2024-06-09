@@ -18,7 +18,7 @@
 }
 
 body {
-  @apply font-geist text-white bg-gray-800;
+  @apply font-geist text-gray-100 bg-neutral-900 text-sm;
   line-height: 1.5rem;
 }
 
@@ -43,7 +43,7 @@ h4 {
 }
 
 a, p {
-  @apply font-geist text-body;
+  @apply font-geist text-body text-sm;
 }
 
 @media (min-width: 640px) {
@@ -62,4 +62,14 @@ a, p {
   body {
     @apply text-lg;
   }
+}
+
+.container {
+  @apply max-w-screen-lg mx-auto px-4;
+}
+
+.hero-container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
