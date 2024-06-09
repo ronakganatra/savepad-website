@@ -1,14 +1,13 @@
----
-// src/layouts/MainLayout.astro
----
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savepad</title>
-    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/global.css">
   </head>
-  <body class="bg-dark-gray text-white font-geist">
+  <body class="dark:bg-dark-gray dark:text-white light:bg-white light:text-black font-geist">
     <slot />
   </body>
 </html>
