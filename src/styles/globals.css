@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/fonts/Outfit.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Geist';
+    src: url('/fonts/Geist.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Epilogue';
+    src: url('/fonts/Epilogue.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'Geist', sans-serif;
+  }
+  
