@@ -1,0 +1,13 @@
+---
+import PrimaryButton from './PrimaryButton.astro';
+import SecondaryButton from './SecondaryButton.astro';
+---
+<section class="flex flex-col justify-center items-center text-center h-[90vh] bg-gray-800 text-white">
+  <p class="text-yellow-400 font-medium mb-2">✨ Early Access</p>
+  <h1 class="font-outfit text-6xl font-bold mb-4">Helping growth teams get their sh*t together.</h1>
+  <p class="text-xl mb-8">Savepad is the collaborative swipe file to store, organize, reference, share, and actually use all the resources and examples you have.</p>
+  <div class="flex space-x-4">
+    <PrimaryButton href="/join" label="Join waitlist" iconRight="heroicons-outline:chevron-right" />
+    <SecondaryButton href="/learn-more" label="Learn more" iconRight="heroicons-outline:play" />
+  </div>
+</section>

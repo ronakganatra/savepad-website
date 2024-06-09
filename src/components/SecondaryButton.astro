@@ -1,0 +1,12 @@
+---
+export let href = '#';
+export let label = 'Click me';
+export let iconLeft = null;
+export let iconRight = null;
+---
+<a href={href}
+   class="bg-white text-purple-800 px-6 py-3 rounded inline-flex items-center space-x-2 hover:bg-gray-300">
+  {iconLeft && <span class="iconify" data-icon={iconLeft} data-inline="false"></span>}
+  <span>{label}</span>
+  {iconRight && <span class="iconify" data-icon={iconRight} data-inline="false"></span>}
+</a>
