@@ -3,21 +3,63 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Outfit';
-    src: url('/fonts/Outfit.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'Geist';
-    src: url('/fonts/Geist.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'Epilogue';
-    src: url('/fonts/Epilogue.ttf') format('truetype');
-  }
-  
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url('/fonts/Epilogue.ttf') format('truetype');
+}
+
+body {
+  @apply font-geist text-body bg-dark-gray text-white;
+  line-height: 1.5rem;
+}
+
+h1 {
+  @apply font-outfit text-h1 font-medium;
+}
+
+h2 {
+  @apply font-outfit text-h2 font-medium;
+}
+
+h3 {
+  @apply font-outfit text-h3 font-medium;
+}
+
+h4 {
+  @apply font-outfit text-h4 font-medium;
+}
+
+.title {
+  @apply font-epilogue text-h2 font-semibold;
+}
+
+a, p {
+  @apply font-geist text-body;
+}
+
+@media (min-width: 640px) {
   body {
-    font-family: 'Geist', sans-serif;
+    @apply text-sm;
   }
-  
+}
+
+@media (min-width: 768px) {
+  body {
+    @apply text-base;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    @apply text-lg;
+  }
+}
